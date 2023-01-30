@@ -370,6 +370,15 @@ config MAX517
 	  This driver can also be built as a module.  If so, the module
 	  will be called max517.
 
+config MAX5380
+	tristate "Maxim MAX5380 DAC driver"
+	depends on I2C
+	help
+	  If you say yes here you get support for MAX5380 8-bit DAC.
+
+	  This driver can also be built as a module.  If so, the module
+	  will be called max5380.
+
 config MAX5821
 	tristate "Maxim MAX5821 DAC driver"
 	depends on I2C
