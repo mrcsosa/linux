@@ -38,15 +38,13 @@ additionalProperties: false
 examples:
   - |
 
-  &i2c1 {
-        status = "okay";
+    &i2c1 {
+         #address-cells = <1>;
+         #size-cells = <0>;
 
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-          max5380: max5380@31 {
-                  compatible = "maxim,max5380";
-                  reg=<0x31>;
+        max5380: max5380@31 {
+                compatible = "maxim,max5380";
+                reg=<0x31>;
 
           };
   };
